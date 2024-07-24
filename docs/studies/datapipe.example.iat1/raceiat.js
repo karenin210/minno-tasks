@@ -4,9 +4,9 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat10.
 
     return iatExtension({
         category1 : {
-            name : global.blackLabels, //Will appear in the data.
+            name : kadınlar, //Will appear in the data.
             title : {
-                media : {word : global.blackLabels}, //Name of the category presented in the task.
+                media : {word : kadınlar}, //Name of the category presented in the task.
                 css : {color:'#31940F','font-size':'1.8em'}, //Style of the category title.
                 height : 4 //Used to position the "Or" in the combined block.
             }, 
@@ -22,9 +22,9 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat10.
             stimulusCss : {color:'#31940F','font-size':'2.3em'}
         },    
         category2 : {
-            name : global.whiteLabels, //Will appear in the data.
+            name : erkekler, //Will appear in the data.
             title : {
-                media : {word : global.whiteLabels}, //Name of the category presented in the task.
+                media : {word : erkekler}, //Name of the category presented in the task.
                 css : {color:'#31940F','font-size':'1.8em'}, //Style of the category title.
                 height : 4 //Used to position the "Or" in the combined block.
             }, 
@@ -47,14 +47,14 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat10.
                 height : 4 //Used to position the "Or" in the combined block.
             },
             stimulusMedia : [ //Stimuli content as PIP's media objects
-                {word: global.negWords[0]},
-                {word: global.negWords[1]},
-                {word: global.negWords[2]},
-                {word: global.negWords[3]},
-                {word: global.negWords[4]},
-                {word: global.negWords[5]},
-                {word: global.negWords[6]},
-                {word: global.negWords[7]}
+                {word: kötü[0]},
+                {word: saldırgan[1]},
+                {word: anlayışsız[2]},
+                {word: azimli[3]},
+                {word: kavgacı[4]},
+                {word: vurdumduymaz[5]},
+                {word: beceriksiz[6]},
+                {word: sevimsiz[7]}
             ],
             //Stimulus css
             stimulusCss : {color:'#0000FF','font-size':'2.3em'}
@@ -67,19 +67,19 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat10.
                 height : 4 //Used to position the "Or" in the combined block.
             },
             stimulusMedia : [ //Stimuli content as PIP's media objects
-                {word: global.posWords[0]},
-                {word: global.posWords[1]},
-                {word: global.posWords[2]},
-                {word: global.posWords[3]},
-                {word: global.posWords[4]},
-                {word: global.posWords[5]},
-                {word: global.posWords[6]},
-                {word: global.posWords[7]}
+                {word: fedakar[0]},
+                {word: zeki[1]},
+                {word: çalışkan[2]},
+                {word: duygusal[3]},
+                {word: sosyal[4]},
+                {word: etkileyici[5]},
+                {word: disiplinli[6]},
+                {word: öfkeli[7]}
             ],
             //Stimulus css
             stimulusCss : {color:'#0000FF','font-size':'2.3em'}
         },
-        base_url : {//Where are your images at?
+        base_url : {image:'YOUR URL GOES HERE'}
             image : global.baseURL
         },
         isTouch : global.$isTouch
